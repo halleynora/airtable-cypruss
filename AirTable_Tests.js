@@ -3,9 +3,9 @@
 
 context('AirTable', () => {
 
-  //Go to Acquire login page 
+  //Go to Airtable Signup page 
     beforeEach(() => {
-      cy.visit('http://airtable.com/');
+      cy.visit('http://airtable.com/signup');
     })
 
 
@@ -28,11 +28,11 @@ context('AirTable', () => {
 
       it('what_it_does', function() {
      
-         cy.viewport(1792, 1040)
+        //  cy.viewport(1792, 1040)
             
-         cy.get('.homepage > .hero > .hero__width-container > .hero__text-container > .hero__button').click()
+        //  cy.get('.homepage > .hero > .hero__width-container > .hero__text-container > .hero__button').click()
       
-         cy.visit('https://airtable.com/signup')
+        // //  cy.visit('https://airtable.com/signup')
       
          cy.get('.mb2 > form > .flex > .col-12 > #emailSignup').click()
         //  cy.get('.mb2 > form > .flex > .col-12 > #emailSignup').type(makeid(6) + '@airtabletest.com')
